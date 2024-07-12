@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azriel Alfajri | Growth, Data, and Design</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Azriel Alfajri</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Azriel Alfajri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic-2.png" alt="Azriel's Profile Picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Azriel Alfajri</h1>
+            <p class="section__text__p2">Data Analyst</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/CV - Azriel Akbar Al Fajri.pdf')"
+                >
+                    Download CV
+                </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"
+                >
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="LinkedIn Profile"
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/azriel-akbar-alfajri/'"
+                />
+                <img 
+                    src="./assets/instagram.png" 
+                    alt="Instagram Profile"
+                    class="icon" 
+                    onclick="location.href='https://www.instagram.com/azrielalfajr'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="Github Profile"
+                    class="icon" 
+                    onclick="location.href='https://www.github.com/azrielalfajr'"
+                />
+            </div>
+        </div>
+    </section>    
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/about-pic-3.png"
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <h3>Work Experience</h3>
+                        <p>Data Analyst Intern (6 months)<br/><b>KNEKS</b></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor's degree in Economics <br/><b>Brawijaya University</b></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        A recent Economics graduate from Brawijaya University, <b>I have actively engaged in various data analytics initiatives,
+including internships, relevant courseworks, and participation in bootcamps.</b> Proficient in statistical analysis, and my
+enthusiasm lies in leveraging these skills to make impactful contributions within dynamic teams and organizations
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Data Analytics</h2>
+              <div class="article-container">
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>SQL</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                      <h3>Python</h3>
+                      <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                      <h3>Stata</h3>
+                      <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                      <h3>Spreadsheet</h3>
+                      <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                      <h3>Tableau</h3>
+                      <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                      <h3>Looker Studio</h3>
+                      <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                      <h3>Power BI Desktop</h3>
+                      <p>Intermediate</p>
+                    </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Certification</h2>
+                <div class="article-container">
+                  <article>
+                      <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                      />
+                      <div>
+                          <h3>Microsoft Certified: Power BI Data Analyst Associate</h3>
+                          <p>Jun 2024 - Jun 2025</p>
+                      </div>
+                  </article>
+                  <article>
+                      <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                      />
+                      <div>
+                        <h3>DataCamp Certified: SQL Associate</h3>
+                        <p>Jan 2024 - Jan 2026</p>
+                      </div>
+                  </article>
+                  <article>
+                      <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                      />
+                      <div>
+                        <h3>TOEFL ITP (510/677)</h3>
+                        <p>Jun 2023 - Jun 2025</p>
+                      </div>
+                  </article>
+                  <article>
+                      <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                      />
+                      <div>
+                        <h3>TRUST Training Partners Certified: IT Certification</h3>
+                        <p>Issued Nov 2022</p>
+                      </div>
+                  </article>
+                  <article>
+                      <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                      />
+                      <div>
+                        <h3>SKKNI No. 268 Tahun 2020 - Data Management</h3>
+                        <p>Issued Aug 2023</p>
+                      </div>
+                  </article>
+                </div>
+              </div>
+          </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">People Analytics</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/people-analytics'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/12fK6VRkZtsnRr1QbcbsDpqNkE31uJpxQ/view?usp=sharing'">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Credit Risk Prediction</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Child Hobby Prediction</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:azrielakbaralfajri@gmail.com">azrielakbaralfajri@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/azriel-akbar-alfajri">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Azriel Alfajri. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
