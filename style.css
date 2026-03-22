@@ -434,4 +434,38 @@ section {
   footer p {
     text-align: center;
   }
-  
+
+/* AUTO SLIDER PROJECTS */
+
+#projects .experience-details-container {
+  overflow: hidden;
+}
+
+#projects .about-containers {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: slideProjects 30s linear infinite;
+}
+
+/* ukuran card biar konsisten */
+#projects .details-container {
+  min-width: 300px;
+  max-width: 300px;
+  flex: 0 0 auto;
+}
+
+/* animasi jalan ke kiri */
+@keyframes slideProjects {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* pause kalau di hover (biar UX enak) */
+#projects .about-containers:hover {
+  animation-play-state: paused;
+}
