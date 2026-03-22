@@ -331,6 +331,7 @@ section {
     flex: 2;
     min-width: 930px; /* Adjust this value based on your needs */
     max-width: 70%; /* Prevents the boxes from becoming too wide */
+    margin: 0 auto;
     padding: 0.2rem;
     border-radius: 2px;
 }
