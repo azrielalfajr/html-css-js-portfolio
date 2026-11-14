@@ -1,473 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azriel Alfajri | Growth, Data, and Design</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Azriel Alfajr | Growth, Data, and Design</title>
+<meta name="description" content="Azriel Alfajr, Research Fellow at Central Bank of Indonesia. Data analytics, macroprudential analysis, and portfolio projects.">
+<meta name="theme-color" content="#EDF0EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F171D" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Azriel Alfajri</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3.5 7.5 8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="#top">Azriel Alfajr</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Main">
+      <ul id="site-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Azriel Alfajri</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="top" class="hero wrap">
+    <div class="portrait">
+      <img src="./assets/profile-pic-2.png" alt="Portrait of Azriel Alfajr" width="600" height="750" fetchpriority="high">
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-name">Azriel Alfajr</h1>
+      <p class="hero-role">Research Fellow at Central Bank of Indonesia</p>
+      <p class="hero-lead">I turn complex datasets into analysis that supports macroprudential decisions.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="./assets/CV%20-%20Azriel%20Akbar%20Al%20Fajri.pdf" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+        </a>
+        <a class="btn btn-ghost" href="#contact">Contact me</a>
+      </div>
+      <ul class="socials" aria-label="Social profiles">
+        <li><a href="https://www.linkedin.com/in/azriel-akbar-alfajri/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+        <li><a href="https://www.instagram.com/azrielalfajr" aria-label="Instagram" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+        <li><a href="https://www.github.com/azrielalfajr" aria-label="GitHub" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="section wrap">
+    <h2>About me</h2>
+    <div class="about-grid">
+      <img class="about-pic" src="./assets/about-pic-4.jpg" alt="Azriel Alfajr" width="600" height="600" loading="lazy" decoding="async">
+      <div class="about-body">
+        <dl class="facts">
+          <div class="fact">
+            <dt>Work experience</dt>
+            <dd>Research Fellow (2+ years)<br><strong>Bank Indonesia</strong></dd>
+          </div>
+          <div class="fact">
+            <dt>Education</dt>
+            <dd>Bachelor's degree in Economics<br><strong>University of Brawijaya</strong></dd>
+          </div>
+        </dl>
+        <p class="prose">
+          Economics graduate with strong analytical skills and hands-on experience in data-driven policy analysis. Proficient in Excel, Power BI, and other statistical tools, with a proven ability to process and interpret complex datasets to support strategic decision-making. Currently contributing to macroprudential assessments at Bank Indonesia, supporting executive-level reporting through data processing and literature analysis.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section wrap">
+    <h2>Skills and certifications</h2>
+    <div class="panels">
+
+      <div class="panel">
+        <h3>Data analytics</h3>
+        <ul class="skill-list">
+          <li><span class="skill-name">Microsoft Excel, VBA, and Power Query</span><span class="level-wrap"><span class="level level-2" aria-hidden="true"><i></i><i></i><i></i></span>Intermediate</span></li>
+          <li><span class="skill-name">Power BI Desktop</span><span class="level-wrap"><span class="level level-2" aria-hidden="true"><i></i><i></i><i></i></span>Intermediate</span></li>
+          <li><span class="skill-name">Python for Data Science</span><span class="level-wrap"><span class="level level-2" aria-hidden="true"><i></i><i></i><i></i></span>Intermediate</span></li>
+          <li><span class="skill-name">SQL</span><span class="level-wrap"><span class="level level-2" aria-hidden="true"><i></i><i></i><i></i></span>Intermediate</span></li>
+          <li><span class="skill-name">Looker Studio</span><span class="level-wrap"><span class="level level-2" aria-hidden="true"><i></i><i></i><i></i></span>Intermediate</span></li>
+          <li><span class="skill-name">R Programming</span><span class="level-wrap"><span class="level level-1" aria-hidden="true"><i></i><i></i><i></i></span>Basic</span></li>
+          <li><span class="skill-name">Stata</span><span class="level-wrap"><span class="level level-1" aria-hidden="true"><i></i><i></i><i></i></span>Basic</span></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li><span class="cert-name">Microsoft Certified: Power BI Data Analyst Associate</span><span class="cert-date">Jun 2024 - Jun 2025</span></li>
+          <li><span class="cert-name">DataCamp Certified: SQL Associate</span><span class="cert-date">Jan 2024 - Jan 2026</span></li>
+          <li><span class="cert-name">TOEFL ITP (510/677)</span><span class="cert-date">Jun 2023 - Jun 2025</span></li>
+          <li><span class="cert-name">TRUST Training Partners Certified: IT Certification</span><span class="cert-date">Issued Nov 2022</span></li>
+          <li><span class="cert-name">SKKNI No. 268 Tahun 2020 - Data Management</span><span class="cert-date">Issued Aug 2023</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="section wrap">
+    <h2>Recent projects</h2>
+    <ul class="project-grid">
+
+      <li class="project-card">
+        <img src="./assets/project-1.png" alt="People Analytics" loading="lazy" decoding="async">
+        <div class="project-body">
+          <h3>People Analytics</h3>
+          <div class="actions actions-sm">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/azrielalfajr/people-analytics" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/12fK6VRkZtsnRr1QbcbsDpqNkE31uJpxQ/view?usp=sharing" target="_blank" rel="noopener">View project</a>
+          </div>
         </div>
+      </li>
+
+      <li class="project-card">
+        <img src="./assets/project-4.png" alt="Korean Englishman Youtube Analytics" loading="lazy" decoding="async">
+        <div class="project-body">
+          <h3>Korean Englishman Youtube Analytics</h3>
+          <div class="actions actions-sm">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/azrielalfajr/korean-englishman-youtube-analytics" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary btn-sm" href="https://korean-englishman-youtube-analytics.streamlit.app/" target="_blank" rel="noopener">View project</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="project-card">
+        <img src="./assets/project-2.png" alt="Credit Risk Prediction" loading="lazy" decoding="async">
+        <div class="project-body">
+          <h3>Credit Risk Prediction</h3>
+          <div class="actions actions-sm">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/azrielalfajr/credit-risk-project" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary btn-sm" href="https://credit-risk-project.streamlit.app/" target="_blank" rel="noopener">View project</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="project-card">
+        <img src="./assets/project-5.png" alt="K-Means Clustering, Anomaly Detection, and Recommenders System Project" loading="lazy" decoding="async">
+        <div class="project-body">
+          <h3>K-Means Clustering, Anomaly Detection, and Recommenders System Project</h3>
+          <div class="actions actions-sm">
+            <a class="btn btn-primary btn-sm" href="https://github.com/azrielalfajr/ml-specialization-project" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="project-card">
+        <img src="./assets/project-6.png" alt="Automated Sales Reporting using VBA-Macros" loading="lazy" decoding="async">
+        <div class="project-body">
+          <h3>Automated Sales Reporting using VBA-Macros</h3>
+          <div class="actions actions-sm">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/azrielalfajr/autosalesreporting-VBAMacros" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary btn-sm" href="https://tinyurl.com/VBA-SalesReport" target="_blank" rel="noopener">View project</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="contact" class="section wrap">
+    <h2>Contact me</h2>
+    <p class="prose">The quickest way to reach me is by email.</p>
+    <a class="contact-mail" href="mailto:azrielakbaralfajri@gmail.com">
+      <svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>
+      <span>azrielakbaralfajri@gmail.com</span>
+    </a>
+    <p class="contact-alt">
+      You can also find me on
+      <a href="https://www.linkedin.com/in/azriel-akbar-alfajri" target="_blank" rel="noopener">LinkedIn</a>
+      and
+      <a href="https://www.github.com/azrielalfajr" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic-2.png" alt="Azriel's Profile Picture"/>
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Azriel Alfajri</h1>
-            <p class="section__text__p2">Research Fellow at Central Bank of Indonesia</p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2" 
-                    onclick="window.open('./assets/CV - Azriel Akbar Al Fajri.pdf')"
-                >
-                    Download CV
-                </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'"
-                >
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="LinkedIn Profile"
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/azriel-akbar-alfajri/'"
-                />
-                <img 
-                    src="./assets/instagram.png" 
-                    alt="Instagram Profile"
-                    class="icon" 
-                    onclick="location.href='https://www.instagram.com/azrielalfajr'"
-                />
-                <img 
-                    src="./assets/github.png" 
-                    alt="Github Profile"
-                    class="icon" 
-                    onclick="location.href='https://www.github.com/azrielalfajr'"
-                />
-            </div>
-        </div>
-    </section>    
-    <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                    src="./assets/about-pic-4.jpg"
-                    alt="Profile picture"
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" 
-                        alt="experience icon"
-                        class="icon"
-                        />
-                        <h3>Work Experience</h3>
-                        <p>Research Fellow (2+ years)<br/><b>Bank Indonesia</b></p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" 
-                        alt="education icon"
-                        class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>Bachelor's degree in Economics <br/><b>University of Brawijaya</b></p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Economics graduate with strong analytical skills and hands-on experience in data-driven policy analysis. Proficient in
-Excel, Power BI, and other statistical tools, with a proven ability to process and interpret complex datasets to support strategic
-decision-making. Currently contributing to macroprudential assessments at Bank Indonesia, supporting executive-level reporting through data processing and literature analysis.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Data Analytics</h2>
-              <div class="article-container">
-                <article>
-                    <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                    />
-                    <div>
-                        <h3>Microsoft Excel, VBA, and Power Query</h3>
-                        <p>Intermediate</p>
-                    </div>
-                </article>
-                <article>
-                    <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                    />
-                    <div>
-                      <h3>Power BI Desktop</h3>
-                      <p>Intermediate</p>
-                    </div>
-                </article>
-                <article>
-                    <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                    />
-                    <div>
-                      <h3>R Programming</h3>
-                      <p>Basic</p>
-                    </div>
-                </article>
-                <article>
-                    <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                    />
-                    <div>
-                      <h3>Python for Data Science</h3>
-                      <p>Intermediate</p>
-                    </div>
-                </article>
-                <article>
-                    <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                    />
-                    <div>
-                      <h3>Stata</h3>
-                      <p>Basic</p>
-                    </div>
-                </article>
-                <article>
-                    <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                    />
-                    <div>
-                      <h3>SQL</h3>
-                      <p>Intermediate</p>
-                    </div>
-                </article>
-                <article>
-                    <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                    />
-                    <div>
-                      <h3>Looker Studio</h3>
-                      <p>Intermediate</p>
-                    </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Certification</h2>
-                <div class="article-container">
-                  <article>
-                      <img
-                          src="./assets/checkmark.png"
-                          alt="Experience icon"
-                          class="icon"
-                      />
-                      <div>
-                          <h3>Microsoft Certified: Power BI Data Analyst Associate</h3>
-                          <p>Jun 2024 - Jun 2025</p>
-                      </div>
-                  </article>
-                  <article>
-                      <img
-                          src="./assets/checkmark.png"
-                          alt="Experience icon"
-                          class="icon"
-                      />
-                      <div>
-                        <h3>DataCamp Certified: SQL Associate</h3>
-                        <p>Jan 2024 - Jan 2026</p>
-                      </div>
-                  </article>
-                  <article>
-                      <img
-                          src="./assets/checkmark.png"
-                          alt="Experience icon"
-                          class="icon"
-                      />
-                      <div>
-                        <h3>TOEFL ITP (510/677)</h3>
-                        <p>Jun 2023 - Jun 2025</p>
-                      </div>
-                  </article>
-                  <article>
-                      <img
-                          src="./assets/checkmark.png"
-                          alt="Experience icon"
-                          class="icon"
-                      />
-                      <div>
-                        <h3>TRUST Training Partners Certified: IT Certification</h3>
-                        <p>Issued Nov 2022</p>
-                      </div>
-                  </article>
-                  <article>
-                      <img
-                          src="./assets/checkmark.png"
-                          alt="Experience icon"
-                          class="icon"
-                      />
-                      <div>
-                        <h3>SKKNI No. 268 Tahun 2020 - Data Management</h3>
-                        <p>Issued Aug 2023</p>
-                      </div>
-                  </article>
-                </div>
-              </div>
-          </div>
-        </div>
-        <img
-            src="./assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='./#projects'"
-        />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="People Analytics" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">People Analytics</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/people-analytics'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/12fK6VRkZtsnRr1QbcbsDpqNkE31uJpxQ/view?usp=sharing'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-4.png" alt="Korean Englishman Youtube Analytics" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Korean Englishman Youtube Analytics</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/korean-englishman-youtube-analytics'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://korean-englishman-youtube-analytics.streamlit.app/'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Credit Risk Prediction" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Credit Risk Prediction</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/credit-risk-project'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://credit-risk-project.streamlit.app/'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-5.png" alt="K-Means Clustering, Anomaly Detection, and Recommenders System Project" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">K-Means Clustering, Anomaly Detection, and Recommenders System Project</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/ml-specialization-project'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/ml-specialization-project'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-6.png" alt="Automated Sales Reporting using VBA-Macros" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Automated Sales Reporting using VBA-Macros</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/autosalesreporting-VBAMacros'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://tinyurl.com/VBA-SalesReport'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <!-- DUPLICATE PROJECTS (BIAR INFINITE) -->
-                <!-- COPY PASTE ULANG SEMUA DI ATAS -->
-                                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="People Analytics" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">People Analytics</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/people-analytics'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/12fK6VRkZtsnRr1QbcbsDpqNkE31uJpxQ/view?usp=sharing'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-4.png" alt="Korean Englishman Youtube Analytics" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Korean Englishman Youtube Analytics</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/korean-englishman-youtube-analytics'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://korean-englishman-youtube-analytics.streamlit.app/'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Credit Risk Prediction" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Credit Risk Prediction</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/credit-risk-project'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://credit-risk-project.streamlit.app/'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-5.png" alt="K-Means Clustering, Anomaly Detection, and Recommenders System Project" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">K-Means Clustering, Anomaly Detection, and Recommenders System Project</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/ml-specialization-project'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/ml-specialization-project'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-6.png" alt="Automated Sales Reporting using VBA-Macros" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Automated Sales Reporting using VBA-Macros</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/azrielalfajr/autosalesreporting-VBAMacros'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://tinyurl.com/VBA-SalesReport'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:azrielakbaralfajri@gmail.com">azrielakbaralfajri@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/azriel-akbar-alfajri">LinkedIn</a></p>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Inspired by tutorials from How to Become a Developer.</p>
-      </footer>
-      <script src="script.js"></script>
-    </body>
-  </html>
+    <p>Inspired by tutorials from How to Become a Developer.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
