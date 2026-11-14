@@ -95,7 +95,6 @@
       Array.prototype.slice.call(track.children).forEach(function (li) {
         var copy = li.cloneNode(true);
         copy.setAttribute('aria-hidden', 'true');
-        copy.setAttribute('inert', '');
         copy.setAttribute('data-clone', '');
         Array.prototype.forEach.call(copy.querySelectorAll('a, button'), function (el) {
           el.setAttribute('tabindex', '-1');
